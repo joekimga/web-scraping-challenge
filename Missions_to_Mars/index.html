@@ -14,18 +14,21 @@
     /* .dataframe {text-align: center;} */
     body {background-image: url(https://scitechdaily.com/images/Mars-Red-Planet-Highlights-scaled.jpg);background-position: center center; background-size:cover; background-repeat: no-repeat; min-height: 100%; background-color: black;}
     .dataframe, h1, h3, h5, p {background-color: antiquewhite;}
+    h4 {background-color: antiquewhite; text-align: center;}
+    hr {border-top: 2px double #8c8b8b;}
   </style>
 
 
 </head>
 <body>
-  <!------------ JUMBOTRON ----------->
   <div class="container">
+
+  <!------------ JUMBOTRON ----------->
     <div class="jumbotron jumbotron-center">
       <h1 class="display-4">Mission to Mars</h1>
       <a class="btn btn-primary btn-lg" href="#" role="button">Scrape New Data</a>
     </div>
-  </div>
+
 
   <!------------------ Titles and Text  ---------------------------->
 
@@ -33,27 +36,24 @@
   <!-- Python -->
 
   <H3>How NASA's Mars Helicopter Will Reach the Red Planet's Surface</H3>
+  <!-- <h3>{{<TITLE>}}</h3>   -->
+
   <p>The small craft will seek to prove that powered, controlled flight is possible on another planet.  But just getting it onto the surface of Mars will take a whole lot of ingenuity.</p>
+  <!-- <p>{{<PARAGRAPH SUMMARY>}}</p> -->
 
   <!------------------ Main Body  ---------------------------->
     <!------------------ Left Section  ---------------------------->
-  <div class="container">
     <div class="row">
       <div class="col-md-8 left-section">
+        <h3>Featured Mars Image</h3>
         <!-- <img src="https://data-class-jpl-space.s3.amazonaws.com/JPL_Space/index.html" alt="Mars"> -->
         <img src="https://data-class-jpl-space.s3.amazonaws.com/JPL_Space/index.html" class="img-fluid img-thumbnail" alt="...">
         <!-- <img href="https://data-class-jpl-space.s3.amazonaws.com/JPL_Space/index.html" alt="Mars" class="float-left main-img-index" id="description-image"/>   -->
-
       </div>
-    </div>
-  </div>
-
 
   <!------------------ Right Section  ---------------------------->
-    <div class="row">
-      <div class="col-md-4">
-
-        <h5>Mars Facts</h5>
+      <div class="col-md-4 ml-auto">
+        <h3>Mars Facts</h3>
         <!--------------------- Table ------------------------>
         <table border="1" class="dataframe">
           <thead>
@@ -105,13 +105,71 @@
             </tr>
           </tbody>
         </table>
-
-        
       </div>
-    </div>
+
+    </div>   <!--------- top page row_end ---------->
+
+     <br>
+     <br>
+     <br>
 
 
 
+<!-------------- Mars Hemispheres Section --------------->
+      <div class="col-md-12 ml-auto">
+        <h4>Mars Hemispheres</h4>
+      </div>
+      <hr>
+    
+    <div class="section">  
+    <div class="row">
+      <!------- TOP LEFT ------->
+      <div class="col-md-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ligula dui. Fusce pulvinar fermentum ipsum, quis porttitor lorem imperdiet non. Maecenas porta, sem faucibus semper pellentesque, felis ex molestie nisi, posuere aliquam eros nisi sit amet turpis. Nam laoreet vitae eros vehicula suscipit. Aliquam ut dapibus nibh. Nullam elementum quis erat vel placerat. Pellentesque dignissim urna et lacinia euismod. Fusce luctus odio a scelerisque aliquet. Aliquam vitae magna at risus vehicula porta sit amet elementum nisi.
+
+          Vestibulum in tincidunt risus, vitae commodo quam. Etiam vel urna mollis, commodo velit sit amet, maximus dui. Nam ac mi ex. Nulla porta, purus at elementum dignissim, justo erat finibus tortor, sagittis tempor ex nunc ut sapien. Donec vitae elementum augue. In hendrerit tortor nec felis aliquam, malesuada iaculis nisl porta. Fusce lacinia venenatis nibh non suscipit. Vestibulum dui mi, commodo vel felis at, bibendum sodales libero. Cras luctus, est a finibus consequat, mi ligula molestie magna, eget tristique velit lacus nec metus. Praesent venenatis condimentum ipsum, ut consequat quam feugiat vitae. Sed malesuada iaculis lacus eget iaculis. In porta sodales vehicula.</p>
+      </div>
+
+      <!------ TOP RIGHT ------>
+      <div class="col-md-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ligula dui. Fusce pulvinar fermentum ipsum, quis porttitor lorem imperdiet non. Maecenas porta, sem faucibus semper pellentesque, felis ex molestie nisi, posuere aliquam eros nisi sit amet turpis. Nam laoreet vitae eros vehicula suscipit. Aliquam ut dapibus nibh. Nullam elementum quis erat vel placerat. Pellentesque dignissim urna et lacinia euismod. Fusce luctus odio a scelerisque aliquet. Aliquam vitae magna at risus vehicula porta sit amet elementum nisi.
+
+          Vestibulum in tincidunt risus, vitae commodo quam. Etiam vel urna mollis, commodo velit sit amet, maximus dui. Nam ac mi ex. Nulla porta, purus at elementum dignissim, justo erat finibus tortor, sagittis tempor ex nunc ut sapien. Donec vitae elementum augue. In hendrerit tortor nec felis aliquam, malesuada iaculis nisl porta. Fusce lacinia venenatis nibh non suscipit. Vestibulum dui mi, commodo vel felis at, bibendum sodales libero. Cras luctus, est a finibus consequat, mi ligula molestie magna, eget tristique velit lacus nec metus. Praesent venenatis condimentum ipsum, ut consequat quam feugiat vitae. Sed malesuada iaculis lacus eget iaculis. In porta sodales vehicula.</p>
+      </div>
+
+    <!------ BOTTOM LEFT ------>
+      <div class="col-md-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ligula dui. Fusce pulvinar fermentum ipsum, quis porttitor lorem imperdiet non. Maecenas porta, sem faucibus semper pellentesque, felis ex molestie nisi, posuere aliquam eros nisi sit amet turpis. Nam laoreet vitae eros vehicula suscipit. Aliquam ut dapibus nibh. Nullam elementum quis erat vel placerat. Pellentesque dignissim urna et lacinia euismod. Fusce luctus odio a scelerisque aliquet. Aliquam vitae magna at risus vehicula porta sit amet elementum nisi.
+
+          Vestibulum in tincidunt risus, vitae commodo quam. Etiam vel urna mollis, commodo velit sit amet, maximus dui. Nam ac mi ex. Nulla porta, purus at elementum dignissim, justo erat finibus tortor, sagittis tempor ex nunc ut sapien. Donec vitae elementum augue. In hendrerit tortor nec felis aliquam, malesuada iaculis nisl porta. Fusce lacinia venenatis nibh non suscipit. Vestibulum dui mi, commodo vel felis at, bibendum sodales libero. Cras luctus, est a finibus consequat, mi ligula molestie magna, eget tristique velit lacus nec metus. Praesent venenatis condimentum ipsum, ut consequat quam feugiat vitae. Sed malesuada iaculis lacus eget iaculis. In porta sodales vehicula.</p>
+      </div>
+
+    <!------ BOTTOM RIGHT ------>
+      <div class="col-md-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eget ligula dui. Fusce pulvinar fermentum ipsum, quis porttitor lorem imperdiet non. Maecenas porta, sem faucibus semper pellentesque, felis ex molestie nisi, posuere aliquam eros nisi sit amet turpis. Nam laoreet vitae eros vehicula suscipit. Aliquam ut dapibus nibh. Nullam elementum quis erat vel placerat. Pellentesque dignissim urna et lacinia euismod. Fusce luctus odio a scelerisque aliquet. Aliquam vitae magna at risus vehicula porta sit amet elementum nisi.
+
+          Vestibulum in tincidunt risus, vitae commodo quam. Etiam vel urna mollis, commodo velit sit amet, maximus dui. Nam ac mi ex. Nulla porta, purus at elementum dignissim, justo erat finibus tortor, sagittis tempor ex nunc ut sapien. Donec vitae elementum augue. In hendrerit tortor nec felis aliquam, malesuada iaculis nisl porta. Fusce lacinia venenatis nibh non suscipit. Vestibulum dui mi, commodo vel felis at, bibendum sodales libero. Cras luctus, est a finibus consequat, mi ligula molestie magna, eget tristique velit lacus nec metus. Praesent venenatis condimentum ipsum, ut consequat quam feugiat vitae. Sed malesuada iaculis lacus eget iaculis. In porta sodales vehicula.</p>
+      </div>
+
+    </div>     <!-------end of section  -------->
+
+
+
+
+
+
+
+
+
+
+
+    </div>      <!------ Mars Hemisphere row end ------->
+
+
+
+
+
+  </div>   <!--- container_end ---->
 
 
 
