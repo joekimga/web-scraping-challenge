@@ -32,14 +32,13 @@
 
   <!------------------ Titles and Text  ---------------------------->
 
-  <H1>Latest Mars News</H1>
-  <!-- Python -->
+    </div>
 
-  <H3>How NASA's Mars Helicopter Will Reach the Red Planet's Surface</H3>
-  <!-- <h3>{{<TITLE>}}</h3>   -->
-
-  <p>The small craft will seek to prove that powered, controlled flight is possible on another planet.  But just getting it onto the surface of Mars will take a whole lot of ingenuity.</p>
-  <!-- <p>{{<PARAGRAPH SUMMARY>}}</p> -->
+        <h2>Latest Mars News:</h2>
+        <h3>{{ mars_data.news_article }}</h3>
+        <h3>{{ mars_data.news_paragraph }}</h3>
+    </div>
+  </div>
 
   <!------------------ Main Body  ---------------------------->
     <!------------------ Left Section  ---------------------------->
