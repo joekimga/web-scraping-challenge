@@ -32,7 +32,7 @@
 
   <!------------------ Titles and Text  ---------------------------->
 
-    </div>
+    <div>
 
         <h2>Latest Mars News:</h2>
         <h3>{{ mars_data.news_article }}</h3>
