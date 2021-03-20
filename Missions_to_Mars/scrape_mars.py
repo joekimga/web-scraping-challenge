@@ -35,10 +35,62 @@ def mars_scrape():
     news_paragraph = element.find('div', class_="article_teaser_body").get_text()
     # news_paragraph
 
+    # image_path = soup.find_all('img', class_="grey-mars")[0]["src"]
+
+    # mars_img = url + image_path
+
+    # mars_data = {
+    #     # "mars_img": mars_img,
+    #     "news_article": news_title,
+    #     "news_paragraph": news_paragraph,
+    #     }
+
+#############  FEATURED MARS IMAGE  ##########
+
+    # browser = init_browser()
+
+    url_image = "https://data-class-jpl-space.s3.amazonaws.com/JPL_Space/index.html"
+    browser.visit(url_image)
+
+    time.sleep(1)   
+
+    image_button = browser.find_by_css("button.btn.btn-outline-light")
+    image_button.click()
+
+    jpl_html = browser.html
+    jpl_soup = BeautifulSoup(jpl_html, "html.parser")
+    # soup = BeautifulSoup(html, "html.parser")
+
+    image_link = jpl_soup.select_one("div.fancybox-inner img").get  ('src')
+
+    jpl_image = f'https://data-class-jpl-space.s3.amazonaws.com/JPL_Space/{image_link}'
+ 
+
+
+########################  MARS TABLE   ############################
+    mars_db = pd.read_html("https://space-facts.com/mars/")[0]
+    mars_db
+
+    mars_db.columns=["Mars Description", "Values"]
+    mars_db = mars_db.set_index("Mars Description")
+    mars_db
+
+    #mars_db.to_html("mars.html") 
+    mars_variable = mars_db.to_html()
+
+
+
+
+
+
+
     mars_data = {
+        "jpl_image": jpl_image,
         "news_article": news_title,
         "news_paragraph": news_paragraph,
+        "mars_variable": mars_variable,
         }
+
 
     # Close the browser after scraping
     browser.quit()
@@ -47,10 +99,7 @@ def mars_scrape():
     return mars_data
 
 
-    # html = browser.html
-    # soup = bs(html, "html.parser")
-
-
+    ###############  MARS TABLE  ############
 
 
 
