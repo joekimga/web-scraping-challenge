@@ -7,19 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mission to Mars</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <!------------------- Style ----------------------->
-  <style>
-    .jumbotron-center {text-align: center;}
-    /* .dataframe {text-align: center;} */
-    body {background-image: url(https://scitechdaily.com/images/Mars-Red-Planet-Highlights-scaled.jpg);background-position: center center; background-size:cover; background-repeat: no-repeat; min-height: 100%; background-color: black; color: antiquewhite;}
-    .dataframe, .jumbotron, h1, h2, h3, h5, p {background-color: rgb(34, 36, 38);}
-    h4 {background-color: rgb(34, 36, 38); text-align: center;}
-    #mars-hemispheres {background-color: rgb(34, 36, 38); text-align: center;}
-    hr {border-top: 2px double black;}
-
-
-  </style>
-
+  <link rel="stylesheet" href="static/css/style.css">
 
 </head>
 
@@ -51,7 +39,7 @@
         <div class="col-md-4 ml-auto">
           <h3>Mars Facts</h3>
           <!--------------------- Table ------------------------>
-          <p>{{mars_data.mars_variable | safe}}</p>
+          <h4>{{mars_data.mars_variable | safe}}</h4>
 
 
           <!-- <table border="1" class="dataframe">
@@ -125,6 +113,7 @@
     <div class="row">
     <!------- TOP LEFT ------->
     <div class="col-md-6">
+        <img src="" alt="">
         <img src="https://astrogeology.usgs.gov/cache/images/f5e372a36edfa389625da6d0cc25d905_cerberus_enhanced.tif_full.jpg" alt="Cerberus Hemisphere" class="img-thumbnail img-fluid">
     </div>
 
