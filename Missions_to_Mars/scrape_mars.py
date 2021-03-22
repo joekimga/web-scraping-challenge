@@ -114,7 +114,7 @@ def mars_scrape():
         "news_article": news_title,
         "news_paragraph": news_paragraph,
         "mars_variable": mars_variable,
-        # "hemisphere_image_urls": hemisphere_image_urls
+        "hemisphere_image_urls": hemisphere_image_urls
         }
 
     # Close the browser after scraping
