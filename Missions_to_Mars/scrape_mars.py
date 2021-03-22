@@ -61,7 +61,7 @@ def mars_scrape():
     jpl_soup = BeautifulSoup(jpl_html, "html.parser")
     # soup = BeautifulSoup(html, "html.parser")
 
-    image_link = jpl_soup.select_one("div.fancybox-inner img").get  ('src')
+    image_link = jpl_soup.select_one("div.fancybox-inner img").get('src')
 
     jpl_image = f'https://data-class-jpl-space.s3.amazonaws.com/JPL_Space/{image_link}'
  
@@ -79,6 +79,31 @@ def mars_scrape():
     mars_variable = mars_db.to_html()
 
 
+############## Mars Hemisphere  #######
+    astro_base_url = "https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"
+    browser.visit(astro_base_url)
+
+    hemisphere_image_urls=[]
+    mars_classes = browser.find_by_css('img.thumb')
+
+    for i in range(len(mars_classes)):
+    
+        visual_images = {}
+        browser.find_by_css("img.thumb")[i].click()
+        visual_images['title'] = browser.find_by_css("h2.title").text
+#     response = requests.get(classes)
+#     soup = BeautifulSoup(response.text,'html.parser')
+    
+#     base_url = "https://astrogeology.usgs.gov/"
+        button_sample = browser.find_by_text("Sample")
+        button_sample.click()
+
+        visual_images['img_url'] = button_sample["href"]
+        #image_path = base_url + image_path
+        hemisphere_image_urls.append(visual_images)
+        browser.back()
+
+
 
 
 
@@ -89,8 +114,8 @@ def mars_scrape():
         "news_article": news_title,
         "news_paragraph": news_paragraph,
         "mars_variable": mars_variable,
+        # "hemisphere_image_urls": hemisphere_image_urls
         }
-
 
     # Close the browser after scraping
     browser.quit()
