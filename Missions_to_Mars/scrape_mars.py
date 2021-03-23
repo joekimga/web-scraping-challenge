@@ -65,8 +65,6 @@ def mars_scrape():
 
     jpl_image = f'https://data-class-jpl-space.s3.amazonaws.com/JPL_Space/{image_link}'
  
-
-
 ########################  MARS TABLE   ############################
     mars_db = pd.read_html("https://space-facts.com/mars/")[0]
     mars_db
@@ -78,8 +76,8 @@ def mars_scrape():
     #mars_db.to_html("mars.html") 
     mars_variable = mars_db.to_html()
 
-
 ############## Mars Hemisphere  #######
+
     astro_base_url = "https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars"
     browser.visit(astro_base_url)
 
@@ -103,12 +101,7 @@ def mars_scrape():
         hemisphere_image_urls.append(visual_images)
         browser.back()
 
-
-
-
-
-
-
+    ############ Dictionary to store variable data
     mars_data = {
         "jpl_image": jpl_image,
         "news_article": news_title,
@@ -124,16 +117,7 @@ def mars_scrape():
     return mars_data
 
 
-    ###############  MARS TABLE  ############
 
-
-
-
-    # news = soup.find_all('div', class_="image_and_description_container")
-
-
-
-    # featured_image_url = ('https://data-class-jpl-space.s3.amazonaws.com/JPL_Space/' + href)
 
 
 

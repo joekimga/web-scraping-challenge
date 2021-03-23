@@ -115,25 +115,29 @@
     <div class="row">
     <!------- TOP LEFT ------->
     <div class="col-md-6">
-        <img src="{{mars_data.hemisphere_image_urls}}[0]" alt="Cerberus Hemisphere">
+        <img src="{{mars_data.hemisphere_image_urls[0]['img_url'] | safe}}" alt="Cerberus Hemisphere">
+        <p>{{mars_data.hemisphere_image_urls[0]['title']}}</p>
         <!-- <img src="https://astrogeology.usgs.gov/cache/images/f5e372a36edfa389625da6d0cc25d905_cerberus_enhanced.tif_full.jpg" alt="Cerberus Hemisphere" class="img-thumbnail img-fluid">
     </div> -->
 
     <!------ TOP RIGHT ------>
     <div class="col-md-6">
-        <img src="{{mars_data.hemisphere_image_urls}}[1]" alt="Schiaparelli Hemisphere">
+        <img src="{{mars_data.hemisphere_image_urls[1]['img_url'] | safe}}" alt="Schiaparelli Hemisphere">
+        <p>{{mars_data.hemisphere_image_urls[1]['title']}}</p>
         <!-- <img src="https://astrogeology.usgs.gov/cache/images/3778f7b43bbbc89d6e3cfabb3613ba93_schiaparelli_enhanced.tif_full.jpg" alt="Schiaparelli Hemisphere" class="img-thumbnail img-fluid"> -->
     </div>
 
     <!------ BOTTOM LEFT ------>
     <div class="col-md-6">
-        <img src="{{mars_data.hemisphere_image_urls}}[2]" alt="Syrtis Major Hemisphere">
+        <img src="{{mars_data.hemisphere_image_urls[2]['img_url'] | safe}}" alt="Syrtis Major Hemisphere">
+        <p>{{mars_data.hemisphere_image_urls[2]['title']}}</p>
         <!-- <img src="https://astrogeology.usgs.gov/cache/images/555e6403a6ddd7ba16ddb0e471cadcf7_syrtis_major_enhanced.tif_full.jpg" alt="Syrtis Major Hemisphere" class="img-thumbnail img-fluid"> -->
     </div>
 
     <!------ BOTTOM RIGHT ------>
     <div class="col-md-6">
-        <img src="{{mars_data.hemisphere_image_urls}}[3]" alt="Valles Marineris Hemisphere">
+        <img src="{{mars_data.hemisphere_image_urls[3]['img_url'] | safe}}" alt="Valles Marineris Hemisphere">
+        <p>{{mars_data.hemisphere_image_urls[3]['title']}}</p>
         <!-- <img src="https://astrogeology.usgs.gov/cache/images/b3c7c6c9138f57b4756be9b9c43e3a48_valles_marineris_enhanced.tif_full.jpg" alt="Valles Marineris Hemisphere" class="img-thumbnail img-fluid"> -->
     </div>
 
@@ -141,26 +145,7 @@
 
 
 
-
-
-
-
-
-
-
-
 </div>      <!------ Mars Hemisphere row end ------->
-
-
-
-
-
-
-
-
-
-
-
 
 
 
