@@ -1,7 +1,15 @@
 .jumbotron-center {text-align: center;}
 .btn-lg {background-color: rgb(192, 0, 0);}
 /* .dataframe {text-align: center;} */
-body {background-image: url(https://scitechdaily.com/images/Mars-Red-Planet-Highlights-scaled.jpg);background-position: center center; background-size:cover; background-repeat: no-repeat; min-height: 100%; background-color: black; color: antiquewhite;}
+body {
+    background-image: url("https://scitechdaily.com/images/Mars-Red-Planet-Highlights-scaled.jpg");
+    background-position: center center; 
+    background-size:cover; 
+    background-repeat: no-repeat; 
+    min-height: 100%; 
+    background-color: black; 
+    color: antiquewhite;
+}
 .dataframe, .jumbotron, h1, h2, h3, h5, p {background-color: rgb(34, 36, 38);}
 h4 {background-color: rgb(34, 36, 38); text-align: center;}
 img {}
